@@ -2,42 +2,19 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using Revenge.Source.Main.Display;
+using Revenge.Source.Main.Options.Objects;
 
 namespace Revenge.Source.Main.Options
 {
 	public class OptionsHandler
 	{
-		string[] testOptionsArr = {
-			"One",
-			"Two",
-			"Three",
-			"Four",
-			"Five"
-		};
-
-		string[] testCommandTerms = {
-			"test",
-			"exit",
-			"ioio"
-		};
-
-		string[] testCommandNames = {
-			"Test",
-			"Exit",
-			"IOIO"
-		};
-
-		string[] testCommandDescs = {
-			"Testing",
-			"Idk Lol",
-			"Ooga Booga"
-		};
-
 		public void CreateOptions() {
 			Option option = new Option();
 			Command command = new Command();
 			Category category = new Category();
 			TextDivider textDivider = new TextDivider();
+			_Options_ options = new _Options_();
+			_Commands_ commands = new _Commands_();
 			
 			/* Test Category */
 			textDivider.CreateDivider("-", 120, true);
@@ -49,7 +26,7 @@ namespace Revenge.Source.Main.Options
 			/* Test Array Category */
 			textDivider.CreateDivider("-", 120, true);
 			category.CreateCategory("Test Arrays", true, true, true, 6);
-			GetOptions(testOptionsArr, testOptionsArr.Length, 6);
+			GetOptions(options.testOptionsArr, options.testOptionsArr.Length, 6);
 
 			/* Commands Test */
 			textDivider.CreateDivider("-", 120, true);
@@ -60,7 +37,7 @@ namespace Revenge.Source.Main.Options
 
 			textDivider.CreateDivider("-", 120, true);
 			category.CreateCategory("Test Comand Arrays", true, true, true, 6);
-			GetCommands(testCommandTerms, testCommandNames, testCommandDescs, testCommandTerms.Length);
+			GetCommands(commands.testCommandTerms, commands.testCommandNames, commands.testCommandDescs, commands.testCommandTerms.Length);
 		}
 
 		void GetOptions(string[] arr, int length, int increment) {
