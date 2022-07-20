@@ -16,7 +16,7 @@ namespace Revenge.Source.Main.Options
 					((tabs) ? repeat.GetCharRepeat("\t", tabs_amount) : "") + 
 					str + ((newline) ? "\n" : "") +
 					((tabs) ? repeat.GetCharRepeat("\t", tabs_amount) : "") + 
-					$"- Description: {description}" + ((newline) ? "\n" : "")
+					$"- Description: {description}" + ((newline) ? "\n\n" : "")
 				);
 			} else {
 				errorParser.ErrorSwitch("nul", "Name");

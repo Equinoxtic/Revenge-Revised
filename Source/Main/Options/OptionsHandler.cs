@@ -15,6 +15,24 @@ namespace Revenge.Source.Main.Options
 			"Five"
 		};
 
+		string[] testCommandTerms = {
+			"test",
+			"exit",
+			"ioio"
+		};
+
+		string[] testCommandNames = {
+			"Test",
+			"Exit",
+			"IOIO"
+		};
+
+		string[] testCommandDescs = {
+			"Testing",
+			"Idk Lol",
+			"Ooga Booga"
+		};
+
 		public void CreateOptions() {
 			Option option = new Option();
 			Command command = new Command();
@@ -39,6 +57,10 @@ namespace Revenge.Source.Main.Options
 			for (int i = 1; i <= 5; i++) {
 				command.CreateCommand($"lol {i}", $"LOL {i}", $"LOLOLOLOLOLOLOL {i}");
 			}
+
+			textDivider.CreateDivider("-", 120, true);
+			category.CreateCategory("Test Comand Arrays", true, true, true, 6);
+			GetCommands(testCommandTerms, testCommandNames, testCommandDescs, testCommandTerms.Length);
 		}
 
 		void GetOptions(string[] arr, int length, int increment) {
@@ -48,7 +70,7 @@ namespace Revenge.Source.Main.Options
 			}
 		}
 
-		void GetOptions(string[] arr_command_term, string[] arr_command_name, int length, string[] arr_command_descs) {
+		void GetCommands(string[] arr_command_term, string[] arr_command_name, string[] arr_command_descs, int length) {
 			Command command = new Command();
 			for (int i = 0; i < length; i++) {
 				command.CreateCommand(arr_command_term[i], arr_command_name[i], arr_command_descs[i]);
