@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 /// Class for storing arrays for the Option's Number, Name, etc.
 /// </summary>
 
-
 namespace Revenge.Source.Main.Options.Objects
 {
 	public class _Options_
