@@ -13,7 +13,7 @@ namespace Revenge.Source.Main.Options
 			if (!String.IsNullOrEmpty(name)) {
 				string str = $"[{num}] {name}";
 				Console.Write(
-					((tabs) ? repeat.GetCharRepeat("\t", 6) : "") + str + ((newline) ? "\n" : "")
+					((tabs) ? repeat.GetCharRepeat("\t", tabs_amount) : "") + str + ((newline) ? "\n" : "")
 				);
 			} else {
 				errorParser.ErrorSwitch("nul", "Name");
