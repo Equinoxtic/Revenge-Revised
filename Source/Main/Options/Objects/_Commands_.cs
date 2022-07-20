@@ -2,6 +2,10 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 
+/// <summary>
+/// Class for storing arrays for the Command's Name, Description, etc.
+/// </summary>
+
 namespace Revenge.Source.Main.Options.Objects
 {
 	public class _Commands_
