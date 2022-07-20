@@ -28,7 +28,12 @@ namespace Revenge.Source.Main.Init
 			title.CreateTitle("Title");
 			strrepeat.RepeatEscSeq("\t", 6);
 			Console.Write("Hello World!");
-			optionsHandler.CreateOptions();
+			
+			if (showOptions) {
+				optionsHandler.CreateOptions();
+			}
+
+			textDiv.CreateDivider("-", 120, true);
 			Console.Write(cursor.GetCursor());
 			Console.Read();
 		}
