@@ -10,9 +10,7 @@ namespace Revenge.Source.Main.Events
 			ClearScreen clearScreen = new ClearScreen();
 			Console.Write("\nExiting...\n");
 			Thread.Sleep(3000);
-			if (shouldClearScreen) {
-			 	clearScreen.DoScreenClear(false);
-			}
+			Environment.Exit(0);
 		}
 	}
-}	
+}
