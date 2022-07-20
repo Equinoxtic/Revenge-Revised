@@ -7,17 +7,17 @@ namespace Revenge
 {
 	class Program
 	{
-		static void Init(bool showOptions = true) {
+		static void Init(bool showInit = true) {
 			Init init = new Init();
-			init.NewInstance(showOptions);
+			init.NewInstance(showInit);
 		}
 
 		public static void Main(string[] args) {
 			Init();
 		}
 
-		public void ReInit(bool showOptions) {
-			Init(showOptions);
+		public void ReInit(bool showInit) {
+			Init(showInit);
 		}
 	}
 }
