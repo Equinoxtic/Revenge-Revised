@@ -9,9 +9,9 @@ namespace Revenge.Source.Main.Display
 	{
 		Repeat repeat = new Repeat();
 		public void CreateDivider(string ch, int times, bool donl) {
-			if (donl) { Console.Write("\n\n"); }
+			if (donl) { Console.Write("\n"); }
 			repeat.RepeatChar(ch, times);
-			if (donl) { Console.Write("\n\n"); }
+			if (donl) { Console.Write("\n"); }
 		}
 	}
 }
