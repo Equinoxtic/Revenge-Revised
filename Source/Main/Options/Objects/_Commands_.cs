@@ -12,7 +12,7 @@ namespace Revenge.Source.Main.Options.Objects
 	{
 		public string[] testCommandTerms = {
 			"test",
-			"exit",
+			"-exit",
 			"ioio"
 		};
 
@@ -24,7 +24,7 @@ namespace Revenge.Source.Main.Options.Objects
 
 		public string[] testCommandDescs = {
 			"Testing",
-			"Idk Lol",
+			"Exit out of the client",
 			"Ooga Booga"
 		};
 	}

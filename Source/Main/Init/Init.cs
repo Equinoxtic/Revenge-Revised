@@ -14,7 +14,6 @@ namespace Revenge.Source.Main.Init
 {
 	public class Init
 	{
-		public static bool changedCursorState = false;
 		TextDivider textDiv = new TextDivider();
 		Title title = new Title();
 		Cursor cursor = new Cursor();
@@ -40,10 +39,6 @@ namespace Revenge.Source.Main.Init
 				optionsHandler.CreateOptions();
 				textDiv.CreateDivider("-", 120, true);
 			}
-
-			if (changedCursorState) {
-				Console.Write("\n");
-			}
 			
 			Console.Write(cursor.GetCursor());
 			_input = Console.ReadLine();
@@ -55,7 +50,6 @@ namespace Revenge.Source.Main.Init
 					runOption.RunOptionEvent(Convert.ToInt32(_input));
 				}
 			} else {
-				changedCursorState = true;
 				program.ReInit(false);
 			}
 		}

@@ -12,7 +12,7 @@ namespace Revenge.Source.Main.Events
 			ErrorParser errorParser = new ErrorParser();
 			if (option != 0) {
 				switch(option) {
-					case 1: Console.Write("\njriviwjiiorg\n"); break;
+					case 1: Console.Write("\njriviwjiiorg\n\n"); break;
 				}
 			} else {
 				errorParser.ErrorSwitch("inv", "Number", Convert.ToString(option));
