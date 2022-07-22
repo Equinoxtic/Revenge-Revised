@@ -14,6 +14,7 @@ namespace Revenge.Source.Main.Init
 {
 	public class Init
 	{
+		ClearScreen clearScreen = new ClearScreen();
 		TextDivider textDiv = new TextDivider();
 		Title title = new Title();
 		Cursor cursor = new Cursor();
@@ -24,10 +25,13 @@ namespace Revenge.Source.Main.Init
 		RunCommand runCommand = new RunCommand();
 		RunOption runOption = new RunOption();
 		Program program = new Program();
+		ModuleInit moduleInit = new ModuleInit();
 
 		public void NewInstance(bool showInit)
 		{
 			string _input;
+			
+			moduleInit.RunClientModules();
 
 			window.SetWindowTitle("Revenge");
 			window.SetWindowSize(120, 32);
