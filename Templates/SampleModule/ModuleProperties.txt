@@ -1,0 +1,3 @@
+Name: Sample-Module
+Author: [Author]
+About: (Description)
