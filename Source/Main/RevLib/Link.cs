@@ -18,7 +18,7 @@ namespace Revenge.Source.Main.RevLib
 			if (!String.IsNullOrEmpty(link)) {
 				link = link.Replace("&", "&^");
 				Process.Start(
-					new ProcessStartInfo(link) {UseShellExecute = true}
+					new ProcessStartInfo(GetLink(link)) {UseShellExecute = true}
 				);
 			} else {
 				LinkPrompt();
