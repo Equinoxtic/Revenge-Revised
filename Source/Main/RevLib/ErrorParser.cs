@@ -13,7 +13,7 @@ namespace Revenge.Source.Main.RevLib
 			- "wip" > Work In Progress Error
 		*/
 
-		public void ErrorSwitch(string? type, string? cause, string? key = "", string? errorStr = "ERROR")
+		public void ErrorSwitch(string? type, string? cause, string? key = "", string? errorStr = "ERROR", bool doBeep = true)
 		{
 			// This if statement looking kinda goofy bro ong :skull:
 			if ( !String.IsNullOrEmpty(type) &&
@@ -33,6 +33,7 @@ namespace Revenge.Source.Main.RevLib
 						break;
 				}
 			}
+			if (doBeep) { Console.Beep(800, 200); }
 		}
 	}
 }
