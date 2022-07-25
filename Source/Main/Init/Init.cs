@@ -24,7 +24,7 @@ namespace Revenge.Source.Main.Init
 		OptionsHandler optionsHandler = new OptionsHandler();
 		RunCommand runCommand = new RunCommand();
 		RunOption runOption = new RunOption();
-		Program program = new Program();
+		Listener listener = new Listener();
 		ModuleInit moduleInit = new ModuleInit();
 
 		public void NewInstance(bool showInit)
@@ -46,16 +46,7 @@ namespace Revenge.Source.Main.Init
 			
 			Console.Write(cursor.GetCursor());
 			_input = Console.ReadLine();
-
-			if (!String.IsNullOrEmpty(_input)) {
-				if (_input.StartsWith("-")) {
-					runCommand.RunCommandEvent(_input);
-				} else {
-					runOption.RunOptionEvent(Convert.ToInt32(_input));
-				}
-			} else {
-				program.ReInit(false);
-			}
+			listener.ListenForCommandInput(_input);
 		}
 	}
 }
