@@ -11,9 +11,11 @@ namespace Revenge.Source.Main.Events
 			Program program = new Program();
 			ErrorParser errorParser = new ErrorParser();
 			ClientExit clientExit = new ClientExit();
+			LinkOpen linkOpen = new LinkOpen();
 			if (!String.IsNullOrEmpty(command)) {
 				switch(command) {
 					case "--exit": clientExit.InitExit(true); break;
+					case "--getgit": linkOpen.InitLink("https://github.com/Equinoxtic/Revenge-Revised"); break;
 				}
 			} else {
 				errorParser.ErrorSwitch("nul", "String");
