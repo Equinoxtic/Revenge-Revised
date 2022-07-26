@@ -5,6 +5,7 @@ using Revenge.Source.Main.RevLib;
 using Revenge.Source.Main.Display;
 using Revenge.Source.Main.Options;
 using Revenge.Source.Main.Events;
+using Revenge.Source.Main.Math;
 
 /// <summary>
 /// Main Initialization File for REVENGE (Only code here that is needed to start)
@@ -26,6 +27,7 @@ namespace Revenge.Source.Main.Init
 		RunOption runOption = new RunOption();
 		Listener listener = new Listener();
 		ModuleInit moduleInit = new ModuleInit();
+		Trigonometric trigonometric = new Trigonometric();
 
 		public void NewInstance(bool showInit)
 		{
@@ -43,6 +45,8 @@ namespace Revenge.Source.Main.Init
 				optionsHandler.CreateOptions();
 				textDiv.CreateDivider("-", 120, true);
 			}
+
+			Console.WriteLine(trigonometric.Sine(20));
 			
 			Console.Write(cursor.GetCursor());
 			_input = Console.ReadLine();
