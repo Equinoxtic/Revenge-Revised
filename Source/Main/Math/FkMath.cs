@@ -15,16 +15,16 @@ namespace Revenge.Source.Main.Math
 			float b_fl = (float)b;
 			if (!String.IsNullOrEmpty(type)) {
 				switch(type) {
-					case "+" | "#add" | "Add":
+					case "+" or "#add" or "Add":
 						Console.Write(Add(a, b));
 						break;
-					case "-" | "#sub" | "Subtract":
+					case "-" or "#sub" or "Subtract":
 						Console.Write(Subtract(a, b));
 						break;
-					case "*" | "#mult" | "Multiply":
+					case "*" or "#mult" or "Multiply":
 						Console.Write(Multiply(a, b));
 						break;
-					case "/" | "#div" | "Divide":
+					case "/" or"#div" or "Divide":
 						Console.Write(Divide(a, b));
 						break;
 				}
