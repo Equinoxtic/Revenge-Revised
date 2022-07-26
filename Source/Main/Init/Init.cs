@@ -13,7 +13,7 @@ using Revenge.Source.Main.Math;
 
 namespace Revenge.Source.Main.Init
 {
-	public class Init
+	public class InitClient
 	{
 		ClearScreen clearScreen = new ClearScreen();
 		TextDivider textDiv = new TextDivider();
@@ -32,7 +32,9 @@ namespace Revenge.Source.Main.Init
 		public void NewInstance(bool showInit)
 		{
 			string _input;
-			
+
+			Console.Write(trigonometric.Sin(20));
+
 			moduleInit.RunClientModules();
 
 			window.SetWindowTitle("Revenge");
@@ -45,8 +47,6 @@ namespace Revenge.Source.Main.Init
 				optionsHandler.CreateOptions();
 				textDiv.CreateDivider("-", 120, true);
 			}
-
-			Console.Write(trigonometric.Sin(20));
 			
 			Console.Write(cursor.GetCursor());
 			_input = Console.ReadLine();
