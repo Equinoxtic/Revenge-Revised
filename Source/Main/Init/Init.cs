@@ -46,7 +46,7 @@ namespace Revenge.Source.Main.Init
 				textDiv.CreateDivider("-", 120, true);
 			}
 
-			Console.WriteLine(trigonometric.Sine(20));
+			Console.Write(trigonometric.Sin(20));
 			
 			Console.Write(cursor.GetCursor());
 			_input = Console.ReadLine();
