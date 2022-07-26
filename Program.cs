@@ -8,7 +8,7 @@ namespace Revenge
 	class Program
 	{
 		static void Init(bool showInit = true) {
-			Init init = new Init();
+			InitClient init = new InitClient();
 			init.NewInstance(showInit);
 		}
 
