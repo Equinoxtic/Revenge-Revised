@@ -5,7 +5,7 @@ using Revenge.Source.Main.RevLib;
 
 namespace Revenge.Source.Main.Events
 {
-	public class LinkOpen
+	public class OpenLink
 	{
 		public void InitLink(string? _link) {
 			Link link = new Link();
