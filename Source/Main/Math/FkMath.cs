@@ -16,7 +16,6 @@ namespace Revenge.Source.Main.Math
 			float a_fl = (float)a;
 			float b_fl = (float)b;
 			double a_db = (double)a;
-			double b_db = (double)b;
 			if (!String.IsNullOrEmpty(type)) {
 				switch(type) {
 					case "+" or "#add" or "Add":
@@ -29,16 +28,16 @@ namespace Revenge.Source.Main.Math
 						Console.Write(Multiply(a, b));
 						break;
 					case "/" or"#div" or "Divide":
-						Console.Write(Divide(a, b));
+						Console.Write(Divide(a_fl, b_fl));
 						break;
 					case "sin" or "sine" or "Sine":
-						Console.Write(Sine(a));
+						Console.Write(Sine(a_db));
 						break;
 					case "cos" or "cosine" or "Cosine":
-						Console.Write(Cosine(a));
+						Console.Write(Cosine(a_db));
 						break;
 					case "tan" or "tangent" or "Tangent":
-						Console.Write(Tangent(a));
+						Console.Write(Tangent(a_db));
 						break;
 					case "pi" or "PI":
 						Console.Write(constants.PI());
