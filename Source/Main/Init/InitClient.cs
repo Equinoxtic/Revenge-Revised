@@ -33,8 +33,6 @@ namespace Revenge.Source.Main.Init
 		{
 			string _input;
 
-			Console.Write(trigonometric.Sin(20));
-
 			moduleInit.RunClientModules();
 
 			window.SetWindowTitle("Revenge");
