@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Revenge.Init;
+using Revenge.States;
 
 namespace Revenge
 {
@@ -13,6 +14,8 @@ namespace Revenge
 		}
 
 		public static void Main(string[] args) {
+			LoadingState loadingState = new LoadingState();
+			loadingState.CreateLoadingState();
 			Init();
 		}
 

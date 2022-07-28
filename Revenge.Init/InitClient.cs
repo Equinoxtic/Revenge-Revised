@@ -25,7 +25,7 @@ namespace Revenge.Init
 			Cursor cursor = new Cursor();
 			Listener listener = new Listener();
 			OptionsHandler optionsHandler = new OptionsHandler();
-			
+
 			string _input;
 
 			moduleInit.RunClientModules();
