@@ -18,7 +18,6 @@ namespace Revenge.Init
 		public void NewInstance(bool showInit)
 		{
 			ModuleInit moduleInit = new ModuleInit();
-			Window window = new Window();
 			Repeat repeat = new Repeat();
 			Title title = new Title();
 			TextDivider textDivider = new TextDivider();
@@ -29,9 +28,6 @@ namespace Revenge.Init
 			string _input;
 
 			moduleInit.RunClientModules();
-
-			window.SetWindowTitle("Revenge");
-			window.SetWindowSize(120, 32);
 
 			if (showInit) {
 				title.CreateTitle("Title");
