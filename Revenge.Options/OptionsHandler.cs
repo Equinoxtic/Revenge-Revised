@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Revenge.Display;
 using Revenge.Options;
 
-namespace Revenge.Source.Main.Options
+namespace Revenge.Options
 {
 	public class OptionsHandler
 	{

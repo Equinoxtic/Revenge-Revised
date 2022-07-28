@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Diagnostics;
-using Revenge.Source.Main.RevLib;
+using Revenge.RevLib;
 
 namespace Revenge.RevLib
 {

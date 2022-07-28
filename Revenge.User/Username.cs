@@ -10,7 +10,7 @@ namespace Revenge.User
 	{
 		public string GetUsername() {
 			FileReader fileReader = new FileReader();
-			string user_name_file = fileReader.FileReader("username", "txt");
+			string user_name_file = fileReader.ReadFile("username", "txt");
 			return (!File.Exists(user_name_file)) ? user_name_file : "User";
 		}
 
@@ -20,11 +20,9 @@ namespace Revenge.User
 		}
 
 		public string SetUsernameStrict(string? uname, string? strict_strings, string? replace_with) {
-			string? strict_uname;
-			if (!String.IsNullOrEmpty(uname)) {
-				strict_uname = uname.Replace(strict_strings, replace_with);
-			}
-			return strict_uname;
+			string? strict_uname = "";
+			strict_uname = uname.Replace(strict_strings, replace_with);
+			return (!String.IsNullOrEmpty(strict_uname)) ? strict_uname : "User";
 		}
 	}
 }

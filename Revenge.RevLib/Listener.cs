@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Revenge.Source.Main.Events;
+using Revenge.Events;
 
 namespace Revenge.RevLib
 {

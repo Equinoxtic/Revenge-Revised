@@ -4,7 +4,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using Revenge.Modules;
 
-namespace Revenge.Source.Main.Init
+namespace Revenge.Init
 {
 	public class ModuleInit
 	{

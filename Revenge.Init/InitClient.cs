@@ -5,7 +5,7 @@ using Revenge.RevLib;
 using Revenge.Display;
 using Revenge.Options;
 using Revenge.Events;
-using Revenge.Math;
+using Revenge.MathLib;
 
 /// <summary>
 /// Main Initialization File for REVENGE (Only code here that is needed to start)
