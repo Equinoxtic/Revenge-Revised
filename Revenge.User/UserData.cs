@@ -6,6 +6,6 @@ namespace Revenge.User
 {
 	public class UserData
 	{
-		// TODO: Finish modules related to this class
+		// TODO: Finish code
 	}
 }
