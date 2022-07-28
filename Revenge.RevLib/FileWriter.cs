@@ -7,6 +7,9 @@ namespace Revenge.RevLib
 {
 	public class FileWriter
 	{
-		// TODO: Finish this code
+		public string WriteFile(string? file, string? ext, string? contents) {
+			string _file = File.WriteAllText(@$"{file}.{ext}", contents);
+			return _file;
+		}
 	}
 }
