@@ -9,12 +9,12 @@ namespace Revenge.Options
 	public class OptionsHandler
 	{
 		public void CreateOptions() {
-			Option option = new Option();
-			Command command = new Command();
-			Category category = new Category();
-			TextDivider textDivider = new TextDivider();
 			_Options_ options = new _Options_();
 			_Commands_ commands = new _Commands_();
+			TextDivider textDivider = new TextDivider();
+			Category category = new Category();
+			Option option = new Option();
+			Command command = new Command();
 			
 			/* Test Category */
 			textDivider.CreateDivider("-", 120, true);

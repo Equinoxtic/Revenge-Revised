@@ -6,8 +6,7 @@ namespace Revenge.Events
 {
 	public class ClientExit
 	{
-		public void InitExit(bool shouldClearScreen) {
-			ClearScreen clearScreen = new ClearScreen();
+		public void InitExit() {
 			Console.Write("\nExiting...\n");
 			Thread.Sleep(3000);
 			Environment.Exit(0);

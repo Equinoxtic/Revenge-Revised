@@ -14,7 +14,7 @@ namespace Revenge.Events
 			OpenLink openLink = new OpenLink();
 			if (!String.IsNullOrEmpty(command)) {
 				switch(command) {
-					case "--exit": clientExit.InitExit(true); break;
+					case "--exit": clientExit.InitExit(); break;
 					case "--getgit": openLink.InitLink("https://github.com/Equinoxtic/Revenge-Revised"); break;
 				}
 			} else {

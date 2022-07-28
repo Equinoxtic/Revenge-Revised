@@ -15,23 +15,17 @@ namespace Revenge.Init
 {
 	public class InitClient
 	{
-		ClearScreen clearScreen = new ClearScreen();
-		TextDivider textDiv = new TextDivider();
-		Title title = new Title();
-		Cursor cursor = new Cursor();
-		StatusBar statusBar = new StatusBar();
-		Repeat strrepeat = new Repeat();
-		Parser parser = new Parser();
-		Window window = new Window();
-		OptionsHandler optionsHandler = new OptionsHandler();
-		RunCommand runCommand = new RunCommand();
-		RunOption runOption = new RunOption();
-		Listener listener = new Listener();
-		ModuleInit moduleInit = new ModuleInit();
-		Trigonometric trigonometric = new Trigonometric();
-
 		public void NewInstance(bool showInit)
 		{
+			ModuleInit moduleInit = new ModuleInit();
+			Window window = new Window();
+			Repeat repeat = new Repeat();
+			Title title = new Title();
+			TextDivider textDivider = new TextDivider();
+			Cursor cursor = new Cursor();
+			Listener listener = new Listener();
+			OptionsHandler optionsHandler = new OptionsHandler();
+			
 			string _input;
 
 			moduleInit.RunClientModules();
@@ -41,10 +35,10 @@ namespace Revenge.Init
 
 			if (showInit) {
 				title.CreateTitle("Title");
-				strrepeat.RepeatEscSeq("\t", 6);
+				repeat.RepeatEscSeq("\t", 6);
 				Console.Write("Hello World!");
 				optionsHandler.CreateOptions();
-				textDiv.CreateDivider("-", 120, true);
+				textDivider.CreateDivider("-", 120, true);
 			}
 			
 			Console.Write(cursor.GetCursor());
