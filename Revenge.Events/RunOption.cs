@@ -18,7 +18,7 @@ namespace Revenge.Events
 				errorParser.ErrorSwitch("inv", "Number", Convert.ToString(option));
 			}
 			if (returnToMain) {
-				program.ReInit(false);
+				program.ReInit(false, false);
 			}
 		}
 	}

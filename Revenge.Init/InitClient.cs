@@ -6,6 +6,7 @@ using Revenge.Display;
 using Revenge.Options;
 using Revenge.Events;
 using Revenge.MathLib;
+using Revenge.States;
 
 /// <summary>
 /// Main Initialization File for REVENGE (Only code here that is needed to start)
@@ -15,7 +16,7 @@ namespace Revenge.Init
 {
 	public class InitClient
 	{
-		public void NewInstance(bool showInit)
+		public void NewInstance(bool showInit, bool openLoading)
 		{
 			ModuleInit moduleInit = new ModuleInit();
 			Repeat repeat = new Repeat();
@@ -24,12 +25,21 @@ namespace Revenge.Init
 			Cursor cursor = new Cursor();
 			Listener listener = new Listener();
 			OptionsHandler optionsHandler = new OptionsHandler();
+			Window window = new Window();
+			LoadingState loadingState = new LoadingState();
+			InitClient init = new InitClient();
+
+			window.SetWindowTitle("Revenge");
+			window.SetWindowSize(120, 32);
 
 			string _input;
 
-			moduleInit.RunClientModules();
+			// moduleInit.RunClientModules();
 
 			if (showInit) {
+				if (openLoading) {
+					loadingState.CreateLoadingState();
+				}
 				title.CreateTitle("Title");
 				repeat.RepeatEscSeq("\t", 6);
 				Console.Write("Hello World!");

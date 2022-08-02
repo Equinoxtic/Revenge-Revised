@@ -16,7 +16,7 @@ namespace Revenge.RevLib
 					runCommand.RunCommandEvent(_input);
 				} else { runOption.RunOptionEvent(Convert.ToInt32(_input)); }
 			} else {
-				program.ReInit(false);
+				program.ReInit(false, false);
 			}
 		}
 	}

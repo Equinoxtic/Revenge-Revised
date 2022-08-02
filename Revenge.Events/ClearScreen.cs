@@ -10,7 +10,7 @@ namespace Revenge.Events
 			Program program = new Program();
 			System.Console.Clear();
 			if (returnToMain) {
-				program.ReInit(false);
+				program.ReInit(false, false);
 			}
 		}
 	}

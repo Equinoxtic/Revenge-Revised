@@ -21,7 +21,7 @@ namespace Revenge.Events
 				errorParser.ErrorSwitch("nul", "String");
 			}
 			if (returnToMain) {
-				program.ReInit(false);
+				program.ReInit(false, false);
 			}
 		}
 	}
