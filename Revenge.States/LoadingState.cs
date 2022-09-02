@@ -10,25 +10,30 @@ namespace Revenge.States
 	{
 		string[] loading_files = {
 
+			// Display
 			"Display/Cursor",
 			"Display/StatusBar",
 			"Display/TextDivider",
 			"Display/Title",
 
+			// Events
 			"Events/ClearScreen",
 			"Events/ClientExit",
 			"Events/OpenLink",
 			"Events/RunCommand",
 			"Events/RunOption",
 
+			// Init
 			"Init/InitClient",
 			"Init/ModuleInit",
 
+			// MathLib
 			"MathLib/Constants",
 			"MathLib/FkMath",
 			"MathLib/Functions",
 			"MathLib/Trigonometric",
 
+			// Options
 			"Options/_Commands_",
 			"Options/_Options_",
 			"Options/Category",
@@ -36,6 +41,7 @@ namespace Revenge.States
 			"Options/Option",
 			"Options/OptionsHandler",
 
+			// RevLib
 			"RevLib/ClientVersion",
 			"RevLib/ErrorParser",
 			"RevLib/FileReader",
@@ -46,14 +52,11 @@ namespace Revenge.States
 			"RevLib/Repeat",
 			"RevLib/Window",
 
+			// States
 			"States/LoadingState",
 
-			"User/UserData",
-			"User/UserHandler",
-			"User/UserHashes",
-			"User/Username",
-			"User/UserPass",
-			"User/UserProperties"
+			// User
+			"User/UserHandler"
 
 		};
 
