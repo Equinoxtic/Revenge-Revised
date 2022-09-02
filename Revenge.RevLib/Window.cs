@@ -15,8 +15,10 @@ namespace Revenge.RevLib
 		}
 
 		public void SetWindowSize(int a, int b) {
-			if (a != 0 && b != 0) {
-				Console.SetWindowSize(a, b);
+			if (a > 0 && b > 0) {
+				Console.SetWindowSize(
+					Convert.ToInt32(a), Convert.ToInt32(b)
+				);
 			}
 		}
 	}
